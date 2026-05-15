@@ -1,5 +1,4 @@
 # 📱 QSplit Android APK
----
 
 A mobile-ready Android adaptation of the original QSplit web application using Capacitor and Android Studio.
 
@@ -7,7 +6,6 @@ QSplit fairly distributes shared discounts based on how much each person spent.
 For example, if a Rs.500 offer is unlocked by a total order above Rs.2000, the discount is proportionally divided instead of equally split ensuring the person who spent more receives a fairer share of the discount.
 
 ## 🌐 Original Project
----
 
 Original web application developed by [Lawsan](https://www.lawsan.dev/):
 
@@ -18,12 +16,6 @@ Web version:
 https://qsplit.vercel.app/
 
 ## 🛠 My Contribution
----
-
-Android adaptation and customization by Janagan.
-
-## ✅ Added Features & Changes
----
 
 - Integrated Capacitor for Android support
 - Converted the React/Vite web app into an installable Android APK
@@ -34,7 +26,6 @@ Android adaptation and customization by Janagan.
 - APK signing and release setup
 
 ## ⚙️ Technologies Used
----
 
 - React
 - Vite
@@ -44,7 +35,6 @@ Android adaptation and customization by Janagan.
 - JavaScript
 
 ## 🚀 Run Locally
----
 
 ### 1. Clone Repository
 
@@ -108,7 +98,6 @@ APK
 Then create/select your keystore and build the release APK.
 
 ## 📁 Important Notice
----
 
 This repository contains:
 - React source code
@@ -122,10 +111,9 @@ This repository does NOT include:
 - signing keystores (.jks)
 
 ## ❤️ Credits
----
 
 Designed and originally developed by [Lawsan](https://www.lawsan.dev/).
 
-Android adaptation, APK integration, customization and Android deployment made by [Janagan](https://www.linkedin.com/in/janagan2k04/).
+Android adaptation, APK integration and Android deployment made by [Janagan](https://www.linkedin.com/in/janagan2k04/).
 
 **Last but not least big thanks to ChatGPT for guidance**
