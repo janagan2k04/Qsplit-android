@@ -1,55 +1,131 @@
-# 🧾 QSplit
+# 📱 QSplit Android APK
+---
 
-A modern, responsive, and aesthetically pleasing web application built to help groups of friends fairly split food order bills. QSplit seamlessly handles all the complex math for you, including proportional discounts, delivery fee splitting, and exact floor-rounding corrections with remainder distribution.
+A mobile-ready Android adaptation of the original QSplit web application using Capacitor and Android Studio.
 
-## ✨ Features
+QSplit fairly distributes shared discounts based on how much each person spent.
+For example, if a Rs.500 offer is unlocked by a total order above Rs.2000, the discount is proportionally divided instead of equally split ensuring the person who spent more receives a fairer share of the discount.
 
-- **Dynamic Member Tracking:** Easily add and manage multiple people participating in the split via animated UI cards.
-- **Advanced Cost Distribution Rules:** 
-  - Applies a custom percentage discount.
-  - Implements a maximum discount cap (e.g., maximum Rs. 500 limit).
-  - Enforces minimum order requirements before applying discounts.
-- **Fair Proportional Allocation:** Discounts are distributed proportionally based on each person's individual order value, ensuring 100% fairness across the board. Delivery fees are split equally among all members.
-- **Precise Rounding Protocol:** Prevents messy currency rounding issues by enforcing floor precision on payable amounts, automatically distributing any `+1` / `-1` remainders to the lowest spenders. The collected cash perfectly matches the target order total!
-- **Dark Mode Support:** A sleek, fully featured Dark Mode toggle that persists preferences seamlessly in your browser's local storage.
-- **Responsive & Modern UI:** Designed with premium fintech-grade aesthetics, featuring tailored custom colors, micro-animations, input focus glows, and polished rounded layouts.
+## 🌐 Original Project
+---
 
-## 🚀 Tech Stack
+Original web application developed by [Lawsan](https://www.lawsan.dev/):
 
-- **Frontend Framework:** [React](https://react.dev/) (powered by [Vite](https://vitejs.dev/))
-- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
-- **Icons:** [Lucide-React](https://lucide.dev/)
-- **Hosting / Deploy:** Configured for any static host.
+https://github.com/lawsanm/qsplit
 
-## 💻 Getting Started
+Web version:
 
-### Prerequisites
-Make sure you have **Node.js** and **NPM** installed on your system.
+https://qsplit.vercel.app/
 
-### Local Installation
+## 🛠 My Contribution
+---
 
-1. **Navigate to the project directory** (or clone via Git if hosted):
-   ```bash
-   git clone https://github.com/lawsanm/qsplit.git
-   cd qsplit
-   ```
+Android adaptation and customization by Janagan.
 
-2. **Install all project dependencies:**
-   ```bash
-   npm install
-   ```
+## ✅ Added Features & Changes
+---
 
-3. **Run the local development server:**
-   ```bash
-   npm run dev
-   ```
-   *The app will be accessible at `http://localhost:5173/`.*
+- Integrated Capacitor for Android support
+- Converted the React/Vite web app into an installable Android APK
+- Configured Android Studio project setup
+- Added Android launcher icons
+- Configured Vite asset loading for APK compatibility
+- Added native Android build workflow
+- APK signing and release setup
 
-4. **Build for production:**
-   ```bash
-   npm run build
-   ```
+## ⚙️ Technologies Used
+---
 
-## 💖 Credits
+- React
+- Vite
+- Capacitor
+- Android Studio
+- Tailwind CSS
+- JavaScript
 
-Designed, coded, and **made with ❤️ by Laux**.
+## 🚀 Run Locally
+---
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/janagan2k04/Qsplit-android.git
+cd Qsplit-android
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Start Development Server
+
+```bash
+npm run dev
+```
+
+The app will run locally at:
+
+```text
+http://localhost:5173
+```
+
+## 📦 Build Android APK
+
+### 1. Build Web Assets
+
+```bash
+npm run build
+```
+
+### 2. Sync Capacitor
+
+```bash
+npx cap sync
+```
+
+### 3. Open Android Studio
+
+```bash
+npx cap open android
+```
+
+### 4. Generate APK
+
+Inside Android Studio:
+
+```text
+Build → Generate Signed Bundle / APK
+```
+
+Choose:
+
+```text
+APK
+```
+
+Then create/select your keystore and build the release APK.
+
+## 📁 Important Notice
+---
+
+This repository contains:
+- React source code
+- Capacitor Android integration
+- Android Studio project files
+- APK build configuration
+- **Release APK file (android\app\release\app-release.apk)**
+
+This repository does NOT include:
+- node_modules
+- signing keystores (.jks)
+
+## ❤️ Credits
+---
+
+Designed and originally developed by [Lawsan](https://www.lawsan.dev/).
+
+Android adaptation, APK integration, customization and Android deployment made by [Janagan](https://www.linkedin.com/in/janagan2k04/).
+
+**Last but not least big thanks to ChatGPT for guidance**
